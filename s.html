@@ -2,7 +2,7 @@
 
 <body>
 
-    <audio id="song" src="b.mp3"></audio>
+    <audio id="song" src="s.mp3"></audio>
     <button style="height:100; width:100">Interact</button>
     <script>
         const audioNode = document.getElementById("song");
@@ -10,7 +10,7 @@
         window.setInterval(function () { // Set interval for checking
             var date = new Date(); // Create a Date object to find out what time it is
             console.log(date.getMilliseconds())
-            if (date.getMinutes() % 3 == 0 && date.getSeconds() === 0 && date.getMilliseconds() <= 3) { // Check the time
+            if (date.getSeconds() === 0 && date.getMilliseconds() <= 3) { // Check the time
                 //console.log("yeah")
                 //audioNode.pause();
                 audioNode.currentTime = 0;
