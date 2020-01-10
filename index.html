@@ -10,7 +10,7 @@
         window.setInterval(function () { // Set interval for checking
             var date = new Date(); // Create a Date object to find out what time it is
             console.log(date.getMilliseconds())
-            if (date.getSeconds() % 10 === 0 && date.getMilliseconds() <= 4) { // Check the time
+            if (date.getSeconds() % 10 === 0 && date.getMilliseconds() <= 3) { // Check the time in seconds is % 10 and milliseconds within epsilon=3(for reletively new laptops/desktops)
                 //console.log("yeah")
                 //audioNode.pause();
                 audioNode.currentTime = 0;
